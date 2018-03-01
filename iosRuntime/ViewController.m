@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIButton+More.h"
 
 @interface ViewController ()
 
@@ -14,16 +15,31 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    for (int i = 0; i <5 ; i ++)
+    {
+        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [btn setTitle:[NSString stringWithFormat:@"btn%d",i] forState:UIControlStateNormal];
+        [btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
+        btn.backgroundColor = [UIColor colorWithRed:arc4random_uniform(256)/256.0 green:arc4random_uniform(256)/256.0 blue:arc4random_uniform(256)/256.0 alpha:1];
+        btn.frame = CGRectMake([UIScreen mainScreen].bounds.size.width/2.0 - 100, 100 * (i + 1), 200, 50);
+        [self.view addSubview:btn];
+    }
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)btnAction:(UIButton *)btn
+{
+    //给btn加一个属性记录被点击的次数
+    btn.UIButtonClickCount += 1;
+    
+    [btn setTitle:[NSString stringWithFormat:@"%@ +%ld次",[btn.currentTitle substringToIndex:4], (long)btn.UIButtonClickCount] forState:UIControlStateNormal];
 }
+
 
 
 @end

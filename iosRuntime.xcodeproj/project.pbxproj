@@ -15,6 +15,7 @@
 		3B978B702047C93D00A0E0F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B978B6F2047C93D00A0E0F1 /* main.m */; };
 		3B978B7A2047C93D00A0E0F1 /* iosRuntimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B978B792047C93D00A0E0F1 /* iosRuntimeTests.m */; };
 		3B978B852047C93D00A0E0F1 /* iosRuntimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B978B842047C93D00A0E0F1 /* iosRuntimeUITests.m */; };
+		3B978B942047CCDC00A0E0F1 /* UIButton+More.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B978B932047CCDC00A0E0F1 /* UIButton+More.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		3B978B802047C93D00A0E0F1 /* iosRuntimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosRuntimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B978B842047C93D00A0E0F1 /* iosRuntimeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iosRuntimeUITests.m; sourceTree = "<group>"; };
 		3B978B862047C93D00A0E0F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B978B922047CCDC00A0E0F1 /* UIButton+More.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+More.h"; sourceTree = "<group>"; };
+		3B978B932047CCDC00A0E0F1 /* UIButton+More.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+More.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				3B978B612047C93D00A0E0F1 /* AppDelegate.m */,
 				3B978B632047C93D00A0E0F1 /* ViewController.h */,
 				3B978B642047C93D00A0E0F1 /* ViewController.m */,
+				3B978B922047CCDC00A0E0F1 /* UIButton+More.h */,
+				3B978B932047CCDC00A0E0F1 /* UIButton+More.m */,
 				3B978B662047C93D00A0E0F1 /* Main.storyboard */,
 				3B978B692047C93D00A0E0F1 /* Assets.xcassets */,
 				3B978B6B2047C93D00A0E0F1 /* LaunchScreen.storyboard */,
@@ -267,6 +272,7 @@
 			files = (
 				3B978B652047C93D00A0E0F1 /* ViewController.m in Sources */,
 				3B978B702047C93D00A0E0F1 /* main.m in Sources */,
+				3B978B942047CCDC00A0E0F1 /* UIButton+More.m in Sources */,
 				3B978B622047C93D00A0E0F1 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
